@@ -1,0 +1,9 @@
+airflow_data:
+  folder_path: /opt/airflow/data/delta_lake
+
+datalake:
+  endpoint: datalake-minio:9000
+  bucket_name: nyc-time-serie
+  folder_name: pump
+  access_key: minio_access_key
+  secret_key: minio_secret_key
