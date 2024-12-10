@@ -9,3 +9,7 @@ airflow_up:
 	docker compose -f airflow-docker-compose.yaml up -d
 airflow_down:
 	docker compose -f airflow-docker-compose.yaml down
+kafka_up:
+	docker compose -f stream_processing/kafka/docker-compose.yml up -d
+kafka_down:
+	docker compose -f stream_processing/kafka/docker-compose.yml down
