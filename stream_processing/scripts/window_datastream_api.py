@@ -46,6 +46,7 @@ class CountWindowProcessFunction(ProcessWindowFunction[tuple, tuple, str, TimeWi
         context: ProcessWindowFunction.Context[TimeWindow],
         elements: Iterable[tuple],
     ) -> Iterable[tuple]:
+
         data_list = []
         total_amounts = 0
         passenger_counts = 0
@@ -75,7 +76,8 @@ class CountWindowProcessFunction(ProcessWindowFunction[tuple, tuple, str, TimeWi
 
 
 if __name__ == "__main__":
-    JARS_PATH = f"jars"
+    JARS_PATH = f"{os.getcwd()}/jars/"
+    print(JARS_PATH)
     servers = "localhost:9092"
     producer = KafkaProducer(bootstrap_servers=servers)
     admin_client = KafkaAdminClient(bootstrap_servers=servers)

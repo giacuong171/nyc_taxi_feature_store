@@ -26,7 +26,7 @@ def main():
 
     consumer.subscribe([topic])
 
-    # Read messages from Kafka
+    # # Read messages from Kafka
     try:
         while True:
             # Wait for up to 1 second for new messages to arrive
@@ -44,6 +44,7 @@ def main():
                 except:
                     value = msg.value().decode("utf-8")
                 print(f"Received message: {value}")
+                break
     except KeyboardInterrupt:
         print("Aborted by user!\n")
 
