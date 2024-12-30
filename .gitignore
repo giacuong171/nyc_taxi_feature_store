@@ -169,3 +169,5 @@ airflow/data
 datastorage/datalake/minio_storage
 datastorage/kafka_connect
 utils
+
+jars/

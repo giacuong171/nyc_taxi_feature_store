@@ -1,0 +1,4 @@
+pyspark==3.3.2
+pydeequ==1.0.1
+python-dotenv==1.0.0
+nltk==3.8.1
